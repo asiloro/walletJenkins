@@ -11,4 +11,4 @@ pool:
 
 steps:
 
-- script: python -m pytest
+- script: python wallet/test/carteiropy/test_calculadora.py 
