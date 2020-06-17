@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent any {
+        docker { image 'node:7-alpine' }
+       }
     
     stages {
         
@@ -13,6 +15,7 @@ pipeline {
         stage('test') {
             
             steps {
+                sh 'node --version'
                 echo 'Testing the app'
             }
         }    
@@ -25,6 +28,8 @@ pipeline {
         }      
        
     }
+   
+}
     post {
         always {
             echo 'This will always run'
