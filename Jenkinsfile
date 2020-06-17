@@ -24,10 +24,9 @@ pipeline {
             
             steps {
                 echo 'echo building the app'
-            }
-        }      
+            }    
        
-    }
+     }
    
 }
     post {
