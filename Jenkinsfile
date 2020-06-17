@@ -1,11 +1,29 @@
 pipeline {
     agent any
+    
     stages {
-        stage('Test') {
+        
+        stage('Build') {
+            
             steps {
-                sh 'echo "Fail!"; exit 1'
+                sh 'echo building the app'
             }
         }
+        
+        stage('test') {
+            
+            steps {
+                sh 'Testing the app'
+            }
+        }    
+        
+        stage('Deploy') {
+            
+            steps {
+                sh 'echo building the app'
+            }
+        }      
+       
     }
     post {
         always {
