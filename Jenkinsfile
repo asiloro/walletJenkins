@@ -6,7 +6,7 @@ pipeline {
             
             steps {
                 echo 'echo building the app'
-                powershell ('docker build -t walletJenkins .')                
+                bat ('docker build -t walletJenkins .')                
             }
         }
         
