@@ -14,6 +14,7 @@ pipeline {
             
             steps {
                 echo 'Testing the app'
+                bat ('docker run walletjenkins ')
             }
         }    
         
